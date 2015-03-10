@@ -1,0 +1,96 @@
+// call out feature
+.call-out {
+  @extend %padding-regular;
+  display: inline-block;
+  width: 100%;
+  background: none repeat scroll 0% 0% $header-desc-background-color;
+  font-size: 1.2em;
+  text-align: center;
+  color: $header-desc-text-color;
+}
+.call-out p:last-child {
+  margin-bottom: 0;
+}
+// post listing
+.posts {
+  .post-teaser {
+    @extend %padding-regular;
+    width: 100%;
+    margin-bottom: 0;
+    display: inline-block;
+    background-size: $feature-image-size;
+    border-bottom: 1px solid $border-color;
+    p a:hover {
+      @extend %link-hover;
+    }
+  }
+  .excerpt {
+    margin-top: 1em;
+  }
+}
+// pagination
+.pagination .button {
+  margin: 0 1.5em;
+  i {
+    vertical-align: middle;
+  }
+}
+.pagination {
+  padding: $padding-small $padding-large 0 $padding-large;
+  text-align: center;
+}
+
+// Aggiunte mie
+.sidebar {
+display: block;
+margin: 2em 1em 0 1em;
+padding: 0 1em 0 1em;
+font-size: 0.80em;
+position: absolute;
+right: 0;
+top: 5em;
+word-wrap: normal;
+width: 15%;
+background-color: white;
+border: 1px solid grey;
+}
+.sidebar h5 {
+text-transform: uppercase;
+}
+.sidebar ul { list-style: none;}
+.sidebar ul li a {
+  color: black;
+}
+.sidebar ul li a:hover {
+  background-color: lightgrey;
+  border: 1px solid grey;
+}
+.sidebar-nav-item.active {
+  font-weight: bold;
+}
+.twitter-timeline {
+  width:20%;
+  height:500;
+  display:block;
+  float:right;
+}
+#markdown-toc {
+  font-size: 90%;
+  float:right;
+  display: block;
+  margin-left: 1em;
+}
+.freccia {
+ text-decoration: none;
+ color: $text-color;
+ float: right;
+}
+.freccia:hover {
+ text-decoration: none;
+ color: $background-color;
+ background-color: $text-color;
+}
+.post-info {
+ float: right;
+ font-size: 90%;
+}

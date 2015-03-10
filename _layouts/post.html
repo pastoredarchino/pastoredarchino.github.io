@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<article class="feature-image">
+  {% if page.image == none %}
+    <header style="background-image: url('{{ site.baseurl }}/img/cielo.jpg')">
+    <h1 class="title">{{ page.title }}</h1>
+    
+  {% else %}
+    <header style="background-image: url('{{ site.baseurl }}/img/{{ page.image }}')">
+    <h1 class="title">{{ page.title }}</h1>
+   
+  {% endif %}
+  {% if page.subtitle != none %}
+    <p class="meta">
+    {{ page.subtitle }}
+    </p>
+  {% endif %} 
+  {% if page.date != none %}
+    <p class="meta">
+    {{ page.date | date: "%-d.%-m.%Y" }}
+    </p> 
+{% endif %} 
+  </header>
+
+  <section class="post-content">
+    {{ content }}<a class="freccia" href="#">&#x2191;</a>
+  </section>
+  
+</article>
+
+<!-- Disqus -->
+{% if site.theme.disqus_shortname %}
+<div class="comments">
+  {% include disqus.html %}
+</div>
+{% endif %}

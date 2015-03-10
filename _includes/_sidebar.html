@@ -1,0 +1,28 @@
+<div class="sidebar">
+    {% if page.section == true %}
+       <h5><i class="fa fa-book"></i> Pagine {{ page.title }}</h5>
+    {% else %}
+       <h5><i class="fa fa-book"></i> Pagine {{ page.category }}</h5>
+    {% endif %}
+  
+    <ul class="sidebar-nav">
+      {% assign pages_list = site.pages  | sort:"dir"  %}
+      {% for node in pages_list %}
+        {% if node.title != null %}
+          {% if node.layout == "page" %}
+             {% if node.category == page.category %}
+                {% if node.path contains 'index.md' %}
+                   <li class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}">
+                   <a  href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
+            </li>        
+                {% else %}
+            <li class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}">
+              <a href="{{ site.baseurl }}{{ node.url }}">- {{ node.title }}</a>
+            </li>        
+             {% endif %}
+             {% endif %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+</div>

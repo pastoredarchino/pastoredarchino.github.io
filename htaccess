@@ -1,0 +1,6 @@
+---
+layout:
+permalink: .htaccess
+---
+
+ErrorDocument 404 /pastore/404.html
