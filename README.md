@@ -1,2 +1,3 @@
 ### pastoredarchino.github.io
-Questo è un clone del sito adesso in funzione su darchino.ch/pastore per prova
+Questo è il sito proveniente da darchino.ch/pastore
+a cui adesso ho dato un nuovo dominio ed un sistemazione su pages.github
