@@ -3,4 +3,4 @@ layout:
 permalink: .htaccess
 ---
 
-ErrorDocument 404 /pastore/404.html
+ErrorDocument 404 /404.html
