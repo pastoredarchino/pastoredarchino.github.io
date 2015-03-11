@@ -8,7 +8,6 @@ image: campanile.jpg
 description: Presentazione del culto
 section: true
 hide: false
-url: /culto/
 ---
 
 Il trovarsi insieme per pregare, ascoltare una predicazione, cantare inni, celebrare la Cena del Signore o un battesimo si chiama per gli evangelici culto.
