@@ -1,37 +1,45 @@
 ---
 layout: default
 ---
-<article class="feature-image">
-  {% if page.image == none %}
-    <header style="background-image: url('{{ site.baseurl }}/img/cielo.jpg')">
-    <h1 class="title">{{ page.title }}</h1>
-    
-  {% else %}
-    <header style="background-image: url('{{ site.baseurl }}/img/{{ page.image }}')">
-    <h1 class="title">{{ page.title }}</h1>
-   
-  {% endif %}
-  {% if page.subtitle != none %}
-    <p class="meta">
-    {{ page.subtitle }}
-    </p>
-  {% endif %} 
-  {% if page.date != none %}
-    <p class="meta">
-    {{ page.date | date: "%-d.%-m.%Y" }}
-    </p> 
-{% endif %} 
-  </header>
 
-  <section class="post-content">
-    {{ content }}<a class="freccia" href="#">&#x2191;</a>
-  </section>
-  
-</article>
-
-<!-- Disqus -->
-{% if site.theme.disqus_shortname %}
-<div class="comments">
-  {% include disqus.html %}
+<div class="post-header">
+  <h1 class="post-title-main">{{ page.title }}</h1>
+ 
 </div>
-{% endif %}
+ {% include post-header.html %}
+<div class="post-content">
+  {{ content }}
+</div>
+<div class="post-footer">
+  {% include post-footer.html %}
+</div>
+
+  {% if page.previous or page.next %}
+    <div class="post-navs row">
+      {% if page.previous %}
+        <div class="col-md-6 post-nav">
+          <h3 class="section-header">
+            Precedente
+            <span class="text-muted"> &middot; </span>
+            <a href="{{ "/info/archivio" | prepend:site.baseurl }}">Vedi Archivio</a>
+          </h3>
+          <h2 class="post-title-link"><a href="{{ page.previous.url | prepend:site.baseurl }}">{{ page.previous.title }}</a></h2>
+          {{ page.previous.excerpt | markdownify }}
+        </div>
+      {% endif %}
+      {% if page.next %}
+        <div class="col-md-6 post-nav">
+          <h3 class="section-header">
+            Successivo
+            {% unless page.previous %}
+              <span class="text-muted"> &middot; </span>
+              <a href="{{ "/info/archivio" | prepend:site.baseurl }}">Vedi Archivio ({{ site.posts.size }})</a>
+            {% endunless %}
+          </h3>
+          <h2 class="post-title-link"><a href="{{ page.next.url | prepend:site.baseurl }}">{{ page.next.title }}</a></h2>
+          {{ page.next.excerpt | markdownify }}
+        </div>
+      {% endif %}
+    </div>
+  {% endif %}
+
