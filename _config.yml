@@ -1,69 +1,29 @@
-# SITE CONFIGURATION
-baseurl: "" # the subpath of your site, e.g. /blog/
-url:  # the base hostname & protocol for your site
-
-permalink: pretty 
-
-# THEME-SPECIFIC CONFIGURATION
-theme:
-  # Meta
-  title: pastore D'Archino
-  avatar: logo.jpg
-  gravatar: # email md5 hash
-  description: "Sito personale del pastore evangelico riformato Stefano D'Archino" # used by search engines
-  
-  # Header and footer text
-  header_text: >
-     <p>La verità vi farà liberi</p>
-     
-  footer_text: >
-    &copy; 2005-2016 Stefano D'Archino con licenza CC-by-nc-nd Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type/">Type Theme</a>
-  
-  # Icons
-  rss: true
-  email_address: # full email address, e.g. "sam@example.com"
-  behance:
-  bitbucket: 
-  dribbble: 
-  facebook: "pastoredarchino"
-  flickr: 
-  github: 
-  google_plus: 
-  instagram: 
-  linkedin:  # full URL
-  pinterest: 
-  reddit: 
-  soundcloud: 
-  stack_exchange:  # full URL
-  steam: 
-  tumblr: 
-  twitter: "pastoredarchino"
-  wordpress: 
-  youtube: 
-  
-  # Scripts
-  google_analytics: # tracking id, e.g. "UA-000000-01"
-  disqus_shortname:
-  
-  # Localization strings
-  str_follow_on: "Segui su"
-  str_rss_follow: "Segui con RSS feed"
-  str_email: "Email"
-  str_next: "Next"
-  str_prev: "Prev"
-  str_continue_reading: "Continua la lettura"
-  
-  # Colors, typography and padding
-  # Open the "_sass > base" folder, and open "_variables.scss"
-
-# PAGINATION
+# Settaggi base
+permalink: pretty
+markdown: kramdown
+gems: 
+  - jekyll-paginate
 paginate: 6
-paginate_path: "/blog/page:num"
+paginate_path: "/page:num"
+exclude:
+  - "README.md"
+  - "marco.pdf"
+highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: :compressed
 
-# Site navigation links
+# Site configuration
+baseurl: "" # The subpath of your site. Use "" if you're hosting a blog at the root level.
+url:     "https://pastoredarchino.ch" # the base hostname & protocol for your site
+
+title: pastore D'Archino
+description: "Sito personale del pastore evangelico riformato Stefano D'Archino"
+
+
+
+# Site nav(igation) links
 sections:
-  - title: Blog
-    url: /blog/
   - title: Chiesa
     url: /chiesa/
   - title: Culto
@@ -72,11 +32,52 @@ sections:
     url: /scrittura/
   - title: Teologia
     url: /teologia/
+  - title: Info
+    url: /info/
 
+# campi specifici
+avatar: logo.jpg
+gravatar: # email md5 hash
+header_text: >
+     <p>La verità vi farà liberi</p>
+  
+footer_text: >
+   pastoredarchino.ch &copy; 2005-2016 Stefano D'Archino con licenza CC-by-nc-nd
+  
+  # Icons
+rss: true
+email_address: pastoredarchino@gmail.com # full email address, e.g. "sam@example.com"
+behance:
+bitbucket: 
+dribbble: 
+facebook: "pastoredarchino"
+flickr: 
+github: 
+google_plus: u/0/115607212786309472373
+instagram: 
+linkedin:  # full URL
+pinterest: 
+reddit: 
+soundcloud: 
+stack_exchange:  # full URL
+steam: 
+tumblr: 
+twitter: "pastoredarchino"
+wordpress: 
+youtube: 
 
-# BUILD SETTINGS
-markdown: kramdown
-highlighter: rouge
-sass:
-  sass_dir: _sass
-  style: :compressed
+# Scripts
+google_analytics: 
+####UA-66843683-1 # tracking id, e.g. "UA-000000-01"
+disqus_shortname:
+  
+# Localization strings
+str_follow_on: "Segui su"
+str_rss_follow: "Segui con RSS feed"
+str_email: "Email"
+str_next: "Next"
+str_prev: "Prev"
+str_continue_reading: "Continua a leggere..."
+
+# Colors, typography and padding
+# Open the "_sass > base" folder, and open "_variables.scss"
