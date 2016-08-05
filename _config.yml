@@ -17,7 +17,7 @@ theme:
      <p>La verità vi farà liberi</p>
      
   footer_text: >
-    &copy; 2005-2015 Stefano D'Archino con licenza CC-by-nc-nd Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type/">Type Theme</a>
+    &copy; 2005-2016 Stefano D'Archino con licenza CC-by-nc-nd Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type/">Type Theme</a>
   
   # Icons
   rss: true
