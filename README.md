@@ -1,5 +1,5 @@
 ### Questa è una prova
-Questo è il sito proveniente da darchino.ch/pastore con cui sto provando
+In questo sito di prova ci sono articoli provenienti da https://pastoredarchino.ch con cui sto provando
 su pastoredarchino.github.io
 
 Essendo un sito personale e con opinioni e non un progetto software la licenza è
