@@ -5,6 +5,7 @@ url:  # the base hostname & protocol for your site
 permalink: pretty 
 
 # THEME-SPECIFIC CONFIGURATION
+theme: minima
 theme:
   # Meta
   title: pastore D'Archino
