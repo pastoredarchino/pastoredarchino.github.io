@@ -1,6 +1,6 @@
 <ul>
   {% if page.title == 'Archivio' %}
-    {% assign anno = '2015' %}
+    {% assign anno = '2016' %}
   {% else %} 
     {% assign anno = page.title | capitalize %}
   {% endif %} 
@@ -25,9 +25,8 @@
   {% when '12' %}dicembre
 {% endcase %} 
 {{ post.date | date: "%Y" }})
-<!-- <a style="color:gray" href="{{ site.baseurl }}/tags/autori/{{ post.author }}">{{ post.author }}</a> -->
  {% for tag in post.tags %}
- <a style="color:gray" href="{{ site.baseurl }}/blog/tags/{{ tag }}">{{ tag }}</a>
+ <a style="color:gray" href="{{ site.baseurl }}/info/tags/{{ tag }}">{{ tag }}</a>
 {% endfor %}
 </li>
    {% endif %} 

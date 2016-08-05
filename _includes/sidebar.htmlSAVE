@@ -1,0 +1,58 @@
+<div class="sidebar-module">
+  
+    <div class="media">
+      <a href="/info/" >
+      <img src="{{ site.baseurl }}/img/faccia.jpg" alt="Stefano D'Archino" class="pull-left">
+      <div class="media-body">
+      </div>
+      </a>
+    </div>
+
+    <script>
+    (function() {
+    var cx = '009519832695528971436:bbr6xrbo0bu';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+    })();
+    </script>
+    <gcse:search></gcse:search>
+    <div class="navbar_right">
+     {% if page.category == 'chiesa' or page.category == 'culto' or page.category == 'scrittura' or page.category == 'teologia' or page.category == 'info' %}
+       <h5><i class="fa fa-book"></i> Pagine {{ page.category }}</h5>
+    {% else %}
+        <h5><i class="fa fa-book"></i> Blog</h5>
+          <p>
+          Sono Stefano D'Archino un pastore evangelico riformato, questo è il mio sito personale. Trovate nei post del Blog alcune meditazioni e nelle pagine varie informazioni sul cristianesimo e la teologia.
+          </p> 
+<a class="twitter-timeline" width="300" height="500" href="https://twitter.com/pastoredarchino"  data-widget-id="389724117466742784">Tweets di @pastoredarchino</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+    {% endif %}
+  
+    <ul class="nav nav-pills nav-stacked btn-md">
+      {% assign pages_list = site.pages  | sort:"dir"  %}
+      {% for node in pages_list %}
+        {% if node.title != null %}
+          {% if node.layout == "page" %}
+             {% if node.category == page.category %}
+                {% if node.path contains 'index.md' %}
+                <li {% if page.url == node.url %} class="active" {% endif %}>
+                  <a  href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
+                </li>        
+              {% else %}
+                <li {% if page.url == node.url %} class="active" {% endif %}>
+                  <a href="{{ site.baseurl }}{{ node.url }}">- {{ node.title }}</a>
+                </li>        
+             {% endif %}
+             {% endif %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+</div>
+</div>

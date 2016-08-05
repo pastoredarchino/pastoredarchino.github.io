@@ -1,0 +1,2 @@
+{% for link in site.sections %}{% if link.url contains page.category %}<li class="active" >{% else %}<li>{% endif %}<a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a></li>{% endfor %}
+
