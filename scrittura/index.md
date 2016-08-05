@@ -9,6 +9,8 @@ hide: false
 image: bibles.jpg
 ---
 
+Prova nel sito per modifiche...
+
 I racconti su Gesù, le sue parole e le parabole che raccontava, le lettere degli apostoli e le storie del popolo di Israele, l’Antico e il Nuovo Testamento, la <strong>Bibbia</strong> insomma, ecco che parla proprio per noi, e ci parla di Gesù Cristo, che ci salva dalle tenebre del dolore o della solitudine.
 
 * 
