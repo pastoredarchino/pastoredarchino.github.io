@@ -2,5 +2,94 @@
 layout:
 permalink: .htaccess
 ---
+Options '+Indexes'
 
-ErrorDocument 404 /404.html
+IndexOptions -FancyIndexing
+
+ErrorDocument 404 https://pastoredarchino.ch/404.html
+
+Redirect 301 /chiesa/approfondimenti/       https://pastoredarchino.ch/chiesa/presentazioni/
+
+Redirect 301 /teologia/01_fede/credo-apostolico/      https://pastoredarchino.ch/teologia/credo-apostolico/
+#Redirect 301 /teologia/credo-apostolico               https://pastoredarchino.ch/teologia/credo-apostolico/
+Redirect 301 /teologia/01_fede/5-solo/                https://pastoredarchino.ch/teologia/5-solo/
+Redirect 301 /teologia/03_amore/liturgia-matrimonio/  https://pastoredarchino.ch/culto/atti-liturgici/liturgia-matrimonio/
+Redirect 301 /chiesa/anno-liturgico/                  https://pastoredarchino.ch/culto/anno-liturgico/
+Redirect 301 /blog/0info/                             https://pastoredarchino.ch/info/
+Redirect 301 /blog/                                   https://pastoredarchino.ch/info/
+Redirect 301 /blog/tags/                              https://pastoredarchino.ch/info/tags
+Redirect 301 /blogs/tags/                              https://pastoredarchino.ch/info/tags
+
+Redirect 301 /scrittura/20-salmi/                     https://pastoredarchino.ch//scrittura/antico-testamento/salmi/
+Redirect 301 /scrittura/30-amos/                      https://pastoredarchino.ch/scrittura/antico-testamento/libri-profetici/
+Redirect 301 /scrittura/01-nuovo-testamento/          https://pastoredarchino.ch/scrittura/nuovo-testamento/
+
+
+Redirect 301 /chiesa/chiese-evangeliche/1_pre-riforma/         https://pastoredarchino.ch/chiesa/chiese-evangeliche/pre-riforma/
+Redirect 301 /chiesa/chiese-evangeliche/2_luterani/            https://pastoredarchino.ch/chiesa/chiese-evangeliche/luterani/
+Redirect 301 /chiesa/chiese-evangeliche/3_riformati/           https://pastoredarchino.ch/chiesa/chiese-evangeliche/riformati/
+Redirect 301 /chiesa/chiese-evangeliche/4a_battisti/           https://pastoredarchino.ch/chiesa/chiese-evangeliche/battisti/
+Redirect 301 /chiesa/chiese-evangeliche/6_tabella/             https://pastoredarchino.ch/chiesa/chiese-evangeliche/tabella/
+Redirect 301 /chiesa/chiese-evangeliche/7_domande-ricorrenti/  https://pastoredarchino.ch/chiesa/chiese-evangeliche/domande-ricorrenti/
+Redirect 301 /chiesa/chiese-evangeliche/8_differenze/          https://pastoredarchino.ch/chiesa/chiese-evangeliche/differenze/
+Redirect 301 /chiesa/chiese-evangeliche/90_attivita/           https://pastoredarchino.ch/chiesa/chiese-evangeliche/attivita/
+#Redirect 301 /chiesa/chiese-evangeliche/donne-pastore/         https://pastoredarchino.ch/chiesa/chiese-evangeliche/donne-pastore/
+Redirect 301 /chiesa/chiese-evangeliche/spiritual-1/           https://pastoredarchino.ch/chiesa/chiese-evangeliche/spiritual/
+Redirect 301 /chiesa/chiese-evangeliche/spiritual-2/           https://pastoredarchino.ch/chiesa/chiese-evangeliche/spiritual/
+
+
+Redirect 301 /chiesa/cronologia/1_le-origini/                  https://pastoredarchino.ch/chiesa/cronologia/le-origini/
+Redirect 301 /chiesa/cronologia/2_da-nicea-gregorio-magno/     https://pastoredarchino.ch/chiesa/cronologia/da-nicea-gregorio-magno/
+Redirect 301 /chiesa/cronologia/3_dal600/                      https://pastoredarchino.ch/chiesa/cronologia/dal600/
+Redirect 301 /chiesa/cronologia/4_medioevo/                    https://pastoredarchino.ch/chiesa/cronologia/medioevo/
+Redirect 301 /chiesa/cronologia/5_riforma/                     https://pastoredarchino.ch/chiesa/cronologia/riforma/
+Redirect 301 /chiesa/cronologia/6_guerre-di-religione/         https://pastoredarchino.ch/chiesa/cronologia/guerre-di-religione/
+Redirect 301 /chiesa/cronologia/7_moderna/                     https://pastoredarchino.ch/chiesa/cronologia/moderna/
+Redirect 301 /chiesa/cronologia/8_contemporanea/               https://pastoredarchino.ch/chiesa/cronologia/contemporanea/
+Redirect 301 /culto/anno-liturgico/01_natale/                  https://pastoredarchino.ch/culto/anno-liturgico/natale/
+
+Redirect 301 /culto/anno-liturgico/03_pasqua/                  https://pastoredarchino.ch/culto/anno-liturgico/pasqua/
+Redirect 301 /culto/anno-liturgico/04_ascensione/              https://pastoredarchino.ch/culto/anno-liturgico/ascensione/
+Redirect 301 /culto/anno-liturgico/05_Pentecoste/              https://pastoredarchino.ch/culto/anno-liturgico/pentecoste/
+Redirect 301 /culto/atti-liturgici/10-battesimo/                    https://pastoredarchino.ch/culto/atti-liturgici/battesimo/
+Redirect 301 /culto/atti-liturgici/20-cena/                         https://pastoredarchino.ch/culto/atti-liturgici/cena/
+Redirect 301 /culto/atti-liturgici/30-matrimonio/                   https://pastoredarchino.ch/culto/atti-liturgici/matrimonio/
+Redirect 301 /culto/atti-liturgici/31-liturgia-matrimonio/          https://pastoredarchino.ch/culto/atti-liturgici/liturgia-matrimonio/
+Redirect 301 /scrittura/02-sola-scrittura/                          https://pastoredarchino.ch/scrittura/sola-scrittura/
+
+Redirect 301 /scrittura/10-antico-testamento/            https://pastoredarchino.ch/scrittura/antico-testamento/
+Redirect 301 /scrittura/antico-testamento/01-pentateuco/         https://pastoredarchino.ch/scrittura/antico-testamento/pentateuco/
+Redirect 301 /scrittura/antico-testamento/06-libri-storici/      https://pastoredarchino.ch/scrittura/antico-testamento/libri-storici/
+Redirect 301 /scrittura/antico-testamento/19-salmi/              https://pastoredarchino.ch/scrittura/antico-testamento/salmi/
+Redirect 301 /scrittura/antico-testamento/22-libri-poetici/      https://pastoredarchino.ch/scrittura/antico-testamento/libri-poetici/
+Redirect 301 /scrittura/antico-testamento/23-libri-profetici/    https://pastoredarchino.ch/scrittura/antico-testamento/libri-profetici/
+Redirect 301 /scrittura/20-nuovo-testamento/                        https://pastoredarchino.ch/scrittura/nuovo-testamento/
+Redirect 301 /scrittura/nuovo-testamento/00-evangeli/            https://pastoredarchino.ch/scrittura/nuovo-testamento/evangeli/
+Redirect 301 /scrittura/nuovo-testamento/05-atti/                https://pastoredarchino.ch/scrittura/nuovo-testamento/atti/
+Redirect 301 /scrittura/nuovo-testamento/06-lettere-di-paolo/    https://pastoredarchino.ch/scrittura/nuovo-testamento/lettere-di-paolo/
+Redirect 301 /scrittura/nuovo-testamento/19-altre-lettere/       https://pastoredarchino.ch/scrittura/nuovo-testamento/altre-lettere/
+Redirect 301 /scrittura/nuovo-testamento/27-apocalisse/          https://pastoredarchino.ch/scrittura/nuovo-testamento/apocalisse/
+Redirect 301 /teologia/01_fede/                                     https://pastoredarchino.ch/teologia/fede/
+Redirect 301 /teologia/02_speranza/                                 https://pastoredarchino.ch/teologia/speranza/
+Redirect 301 /teologia/03_amore/                                    https://pastoredarchino.ch/teologia/amore/
+Redirect 301 /teologia/03a-dieci-comandamenti/                      https://pastoredarchino.ch/teologia/dieci-comandamenti/
+Redirect 301 /teologia/04_credo-apostolico/                         https://pastoredarchino.ch/teologia/credo-apostolico/
+Redirect 301 /teologia/20_vocazione/                                https://pastoredarchino.ch/teologia/vocazione/
+Redirect 301 /teologia/50_scienza-e-fede/                           https://pastoredarchino.ch/teologia/scienza-e-fede/
+Redirect 301 /teologia/50_scienza-e-fede/penicillina/               https://pastoredarchino.ch/teologia/scienza-e-fede/penicillina/
+Redirect 301 /teologia/spiritual/                                   https://pastoredarchino.ch/chiesa/chiese-evangeliche/spiritual/
+Redirect 301 /info/0tags/                                           https://pastoredarchino.ch/info/tags/
+Redirect 301 /info/archivio/87_2014/                                https://pastoredarchino.ch/info/archivio/2014/
+Redirect 301 /info/archivio/88_2013/                                https://pastoredarchino.ch/info/archivio/2013/
+Redirect 301 /info/archivio/89_2012/                                https://pastoredarchino.ch/info/archivio/2012/
+Redirect 301 /info/archivio/90_2011/                                https://pastoredarchino.ch/info/archivio/2011/
+Redirect 301 /info/archivio/91_2010/                                https://pastoredarchino.ch/info/archivio/2010/
+Redirect 301 /info/archivio/92_old/                                 https://pastoredarchino.ch/info/archivio/old/
+ 
+ 
+ 
+ 
+ 
+ 
+#@__HCP_END__@#
+# Anything after the comment above is left alone
